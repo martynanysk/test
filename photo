@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<title>MN Photography</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+<link href='http://fonts.googleapis.com/css?family=Oswald;subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<style>
+body,h1 {font-family: 'Oswald', sans-serif; font-weight: bold}
+img {margin-bottom: -7px}
+
+.w3-row-padding img {margin-bottom: 12px}
+
+/* Create a Parallax Effect */
+.bgimg-1 {
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+    background-image: url('IMAGES/m1.jpg');
+    min-height: 100%;
+    padding-top: 30%;
+}
+
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+</style>
+
+<body>
+
+<!-- Sidenav -->
+<nav class="w3-sidenav w3-black w3-card-2 w3-animate-top w3-center w3-xxlarge" style="display:none;padding-top:220px" id="mySidenav">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-closenav w3-jumbo w3-right w3-display-topright" style="padding:6px 24px">
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="javascript:void(0)" class="w3-text-grey w3-hover-black">Portréty</a>
+  <a href="javascript:void(0)" class="w3-text-grey w3-hover-black">Fashion</a>
+  <a href="javascript:void(0)" class="w3-text-grey w3-hover-black">Glamour</a>
+  <a href="javascript:void(0)" class="w3-text-grey w3-hover-black">Rodinné</a>
+  <a href="javascript:void(0)" class="w3-text-grey w3-hover-black">Svatební</a>
+  <a href="javascript:void(0)" class="w3-text-grey w3-hover-black">Fauna & Flora</a>
+</nav>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-content" style="max-width:1500px ">
+
+<div class="w3-container w3-padding-32 w3-center w3-opacity w3-margin-bottom">
+  <span class="w3-opennav w3-xxlarge w3-right w3-margin-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+  <div class="w3-clear"></div>
+  <h1>Martyna Nysk<font style="color:red"> | Photography</font> </h1>
+  <p>Fotografie vytvořené pro Vás ... </p>
+</div>
+
+<div class="bgimg-1 3-opacity w3-display-container">
+<div><br><br><br></div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <p class="w3-center"><em>Miluji fotografování ... </em></p>
+  <p>Díky fotografií jsem se naučila vnímat svět jinak. Uvědomila jsem si, že fotografie dokáže zastavit čas a uvěčnit chvíle které jsou pro nás důležite. Radost, smutek, emoce lze zachytit pouze jednim stisknutim tlacitka. Pojdme spolu zvecnit tyto chvilky ! </p>
+</div>
+
+<!-- Photo Grid -->
+<div id="myGrid">
+  <div class="w3-third" style="padding:5px;">
+    <img src="IMAGES/marty.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/terka.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/ellen.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/marty copy.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/4-nl.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+
+  </div>
+
+  <div class="w3-third" style="padding:5px;">
+    <img src="IMAGES/2-nl.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/nikca.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/madzia.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/9-nl.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/eliska7nologo.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/simca2.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+  </div>
+
+  <div class="w3-third" style="padding:5px;">
+    <img src="IMAGES/10-nl.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/spolu.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/simca3.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/m2.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/3.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+    <img src="IMAGES/3-nl.jpg" style="width:100%"  onclick="onClick(this)" class="w3-hover-opacity">
+
+  </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" style="max-width:100%;">
+  </div>
+</div>
+
+<!-- Clear floats -->
+<div class="w3-clear"></div><br><br>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</span>
+  </div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">Zde vznika moje tvorba</h3>
+  <p class="w3-center"><em>Napište mi !</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Brno, CZ<br>
+        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Telefon: 73970121<br>
+        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: nysk.martyna@gmail.com<br>
+ </div>
+      </div>
+      <p>V připadě zájmu nebojte se mi napsat:</p>
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Jméno a příjmení">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Komentář">
+      <button class="w3-btn w3-section w3-right">ODESLAT</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-margin-top w3-opacity">
+
+<div style="text-align:center;">
+ <p>© MARTYNA NYSK</p>
+<div class="w3-xlarge w3-padding-10">
+    <a href="nysk.martyna@gmail.com" class="w3-hover-text-red"><i class="fa fa-envelope"></i></a>
+    <a href="https://www.facebook.com/martynanyskphotography/" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i></a>
+    <a href="#" class="w3-hover-text-green"><i class="fa fa-linkedin"></i></a>
+</div>
+</footer>
+ 
+
+<!-- scripts --> 
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(49.232703, 16.648713);
+
+function initialize() {
+var mapProp = {
+  center: myCenter,
+  zoom: 12,
+  scrollwheel: false,
+  draggable: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position: myCenter,
+});
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+
+// Open and close sidenav
+function w3_open() {
+    document.getElementById("mySidenav").style.width = "100%";
+    document.getElementById("mySidenav").style.display = "block";
+}
+
+function w3_close() {
+    document.getElementById("mySidenav").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+}
+
+</script>
+
+
+</body>
+</html>
+
